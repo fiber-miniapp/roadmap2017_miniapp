@@ -1,0 +1,13 @@
+*.swp
+*~
+*.aux
+*.bbl
+*.blg
+*.dvi
+*.log
+*.lot
+*.lof
+*.toc
+*.out
+*.xbb
+.DS_Store
