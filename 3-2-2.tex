@@ -25,7 +25,7 @@ Fiberでは、前節で示した一般的なミニアプリの共通点の他に
 ソースコードサイズ、付随する入力データ、などを中心に簡単に紹介する。
 
 \rmproject{CCS QCD}
-ミニアプリCCS QCD~\cite{CCS-QCD_boku2012}\cite{CCS-QCD_terai2013}は、
+ミニアプリCCS QCD~\cite{CCS-QCD_boku2012,CCS-QCD_terai2013}は、
 高エネルギー物理学で用いられる格子量子色力学（格子QCD）計算における、
 最も計算コストがかかるクォーク伝搬関数の計算部部分を抜き出したものである。
 CCS QCDでは、Wilson型の作用を用いたクォーク伝搬関数の4次元格子上での大規模疎行列連立1次方程式を、
@@ -55,7 +55,7 @@ NICAM-DCは、Fortran90で記述され、MPIによる領域分割並列化がな
 ミニアプリNICAM-DC Miniには、強スケーリングおよび弱スケーリングでの性能計測に対応可能な5つの入力データセットが付随している。
 
 \rmproject{mVMC Mini}
-ミニアプリmVMC Miniは、強相関電子系シミュレーションプログラムmVMC~\cite{mVMC_url}\cite{mVMC_tahara2008}をベースとしている。
+ミニアプリmVMC Miniは、強相関電子系シミュレーションプログラムmVMC~\cite{mVMC_url,mVMC_tahara2008}をベースとしている。
 mVMCは，近藤格子などの多体量子系有効模型の基底状態の波動関数を多変数変分モンテカルロ法により求める。
 mVMCは、C言語で記述され、MPIおよびOpenMPにより並列化されている。
 コメント行を除いたソースコードサイズは約9千行である。
@@ -70,7 +70,7 @@ NGS Analyzer Miniは、NGS Analyzerを大規模I/O性能および整数演算性
 入力データはサイズが大きいため、付属ドキュメントの記述に従い、別途ダウンロードする必要がある。
 
 \rmproject{MODYLAS Mini}
-ミニアプリMODYLAS Miniは、古典分子動力学シミュレーションプログラムMODYLAS~\cite{Modylas_url}\cite{Modylas_andoh2013}をベースにしている。
+ミニアプリMODYLAS Miniは、古典分子動力学シミュレーションプログラムMODYLAS~\cite{Modylas_url,Modylas_andoh2013}をベースにしている。
 MODYLASでは、クーロン相互作用を、八分木構造を持つ空間セル上での多重極展開計算により計算するFast Multipole Method (FMM)法を採用している。
 MODYLASはFortran90で記述され、MPIおよびOpenMPによる並列化がなされている。
 ミニアプリ化にともない、計算対象を水分子系のミクロカノニカル計算に限定している。
@@ -87,7 +87,7 @@ NTChem/RI-MP2は、Fortran90で記述され、MPIおよびOpenMPにより並列�
 別途、強スケーリング性能計測に対応可能な入力データがダウンロード可能である。
 
 \rmproject{FFB Mini}
-ミニアプリFFB Miniは、有限要素法による熱流体解析プログラムFrontFlow/blue(FFB)~\cite{FFB_minami2012}\cite{FFB_kumahata2013}をベースにしている。
+ミニアプリFFB Miniは、有限要素法による熱流体解析プログラムFrontFlow/blue (FFB)~\cite{FFB_minami2012,FFB_kumahata2013}をベースにしている。
 ミニアプリ化にあたり、計算対象を六面体要素に対する基本的な非定常流体解析計算に限定した。
 FFB MiniはFortran90で記述され、MPIにより3次元領域分割並列化に対応している。
 また、京コンピュータおよび富士通FX10上での、自動並列によるスレッド並列計算に対応している。
